@@ -1,0 +1,20 @@
+﻿@model SS6POS.Models.Category
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-4">
+            <form method="post">
+                <div class="form-group">
+                    <label asp-for="CategoryName" class="form-label"></label>
+                    <input asp-for="CategoryName" class="form-control"/>
+                </div>
+                <input type="submit" value="Create"/>
+            </form>
+        </div>
+    </div>
+</div>
+

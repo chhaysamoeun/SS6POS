@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SS6POS.Models.Category>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <a href="/Category/Create">Create New</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Category Name</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CategoryName</td>
+                    <td><a href="#">Edit</a></td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
+
